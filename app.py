@@ -19,7 +19,7 @@ import plotly.express as px
 import datetime
 import io
 from typing import Tuple, List, Iterable, Dict
-import openpyxl
+from openpyxl import Workbook
 
 # Ensure stopwords
 try:
@@ -478,4 +478,5 @@ if st.button("▶️ Запустить обработку"):
         if "_prog_obj" in st.session_state:
             del st.session_state["_prog_obj"]
         st.error(f"Ошибка во время обработки: {e}")
+
 
