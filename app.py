@@ -7,6 +7,7 @@ Streamlit-приложение: быстрый и точный анализ ун
 
 import streamlit as st
 import pandas as pd
+from openpyxl import Workbook
 import numpy as np
 import re
 from pathlib import Path
@@ -19,7 +20,6 @@ import plotly.express as px
 import datetime
 import io
 from typing import Tuple, List, Iterable, Dict
-from openpyxl import Workbook
 
 # Ensure stopwords
 try:
@@ -478,5 +478,6 @@ if st.button("▶️ Запустить обработку"):
         if "_prog_obj" in st.session_state:
             del st.session_state["_prog_obj"]
         st.error(f"Ошибка во время обработки: {e}")
+
 
 
