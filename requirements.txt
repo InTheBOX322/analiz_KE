@@ -5,4 +5,4 @@ scikit-learn
 nltk
 rapidfuzz
 plotly
-python-Levenshtein
+python-levenshtein
