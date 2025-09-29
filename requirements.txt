@@ -1,8 +1,8 @@
 streamlit
 pandas
-openpyxl
 scikit-learn
 nltk
 rapidfuzz
 plotly
 python-levenshtein
+
